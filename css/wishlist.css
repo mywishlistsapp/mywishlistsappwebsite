@@ -1,0 +1,356 @@
+body {
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body a,
+body a:hover,
+body a:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+header {
+	position: fixed;
+	top: 30px;
+	left: 0px;
+	width: 100%;
+	text-align: right;
+	z-index: 100;
+	right: 50%;
+}
+
+header span {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 35px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+header span:first-child {
+	border-radius: 10px 0px 0px 10px;
+}
+
+header.light span {
+	background-color: #EAEAEA;
+	background-color: rgba(234, 234, 234, 0.8);
+}
+
+header.light span {
+	color: #666666;
+}
+
+header span.active {
+	color: #9A9A9A;
+}
+
+header.light span.active {
+	color: #C1C1C1;
+}
+
+div.stars-bg {
+	width: 1000px;
+	height: 750px;
+	background: url(../images/centered-star-bg.png) no-repeat;
+	z-index: 1;
+}
+
+button {
+	display: block;
+	width: 344px;
+	height: 85px;
+	border: 0px;
+	background: url(../images/button-bg.png) no-repeat;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button.iphoneDownload {
+	background: url(../images/iphone-button-bg.png) no-repeat;
+	padding-left: 20px;
+	/*display:none;/* TODO: Remove once store links are updated for download */
+}
+
+div.homepage {
+	min-width: 1390px;
+	width: 100%;
+	height: 1130px;
+	background: url(../images/wishlist-bg.png) repeat-x;
+	margin: auto;
+	text-align: center;
+}
+
+div.homepage div.stars-bg {
+	position: absolute;
+	right: 52%
+}
+
+div.homepage div.threecolumn {
+	margin-top: 200px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+div.homepage div.threecolumn.column1 {
+	font-size: 17px;
+	color: white;
+	font-family: Arial, sans-serif;
+	position: relative;
+	width: 290px;
+	z-index: 10;
+	margin-top: 0px;
+	bottom: 300px;
+	text-align: left;
+}
+
+.oldie div.homepage div.threecolumn.column1 {
+	bottom: 690px;
+}
+
+div.homepage div.threecolumn.column1 button {
+	margin-top: 65px;
+}
+
+div.homepage div.threecolumn.column2 {
+	position: relative;
+	width: 330px;
+	margin-left: 10px;
+	margin-right: 10px;
+	z-index: 10;
+	bottom: 400px;
+}
+
+div.homepage div.threecolumn.column2 img {
+	width: 325px;
+	height: 425px;
+}
+
+div.homepage div.threecolumn.column3 {
+	position: relative;
+	width: 490px;
+	z-index: 10;
+	bottom: 100px;
+}
+
+div.homepage div.threecolumn.column3 img {
+	width: 490px;
+	height: 900px;
+}
+
+div.featurespage {
+	width: 100%;
+	height: 1130px;
+	background-color: #F6F6F6;
+	color: #000000;
+	text-align: center;
+	white-space: nowrap;
+}
+
+div.featurespage div.twocolumn {
+	margin: auto;
+	padding-top: 65px;
+}
+
+div.featurespage div.twocolumn.column1 {
+	display: inline-block;
+	position: relative;
+	width: 630px;
+	height: 921px;
+}
+
+div.featurespage div.twocolumn.column2 {
+	display: inline-block;
+	position: relative;
+	width: 500px;
+	padding-left: 20px;
+	padding-top: 155px;
+	font-size: 16px;
+	bottom: 400px;
+	white-space: normal;
+	text-align: left;
+}
+
+div.featurespage div.twocolumn.column2 ul {
+	padding-left: 0px;
+}
+
+div.featurespage div.twocolumn.column2 ul li {
+	font-size: 14px;
+	list-style: none;
+	background: url(../images/star-yellow.png) no-repeat;
+	padding-left: 50px;
+	height: 30px;
+	margin-bottom: 10px;
+	line-height: 15px;
+	padding-top: 5px;
+}
+
+div.featurespage div.twocolumn.column2 ul li.blue {
+	background: url(../images/star-blue.png) no-repeat;
+}
+
+div.featurespage div.twocolumn.column2 ul li.green {
+	background: url(../images/star-green.png) no-repeat;
+}
+
+div.featurespage div.twocolumn.column2 ul li.yellow {
+	background: url(../images/star-yellow.png) no-repeat;
+}
+
+div.featurespage div.twocolumn.column2 ul li.pink {
+	background: url(../images/star-pink.png) no-repeat;
+}
+
+div.featurespage div.twocolumn.column2 img {
+	position: absolute;
+	left: 30px;
+}
+
+div.featurespage div.twocolumn.column2 button {
+	position: absolute;
+	left: 211px;
+	top: 680px;
+}
+
+div.contactpage {
+	width: 100%;
+	height: 1130px;
+	background: url(../images/wishlist-bg.png) repeat-x;
+	color: #EFEFEF;
+	text-align: center;
+	margin: auto;
+}
+
+div.contactpage div.stars-bg {
+	position: absolute;
+	right: 52%;
+}
+
+div.contactpage div.twocolumn {
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	padding-top: 260px;
+	white-space: normal;
+	z-index: 2;
+}
+
+div.contactpage div.twocolumn.column1 {
+	width: 400px;
+	font-size: 22px;
+	padding-top: 0px;
+	bottom: 275px;
+	text-align: left;
+}
+
+div.contactpage div.twocolumn.column2 {
+	width: 585px;
+}
+
+div.contactpage form {
+	width: 600px;
+}
+
+div.contactpage form input,
+div.contactpage form select,
+div.contactpage form textarea {
+	background-color: #2C2D2F;
+	box-shadow: inset 1px 1px 3px rgba(0,0,0, 0.40);
+	border: 0px;
+	border-bottom: 1px solid #696A6C;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+div.contactpage form label {
+	display: inline-block;
+	width: 125px;
+	height: 40px;
+	text-align: right;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+div.contactpage form label.state {
+	width: 50px;
+}
+
+div.contactpage form label.zip {
+	width: 40px;
+}
+
+div.contactpage form label.phone {
+	clear: left;
+}
+
+div.contactpage form input {
+	width: 430px;
+	height: 40px;
+}
+
+div.contactpage form select {
+	width: 63px;
+	height: 33px;
+	border: 0px;
+	border-bottom: 1px solid #696A6C;
+	box-shadow: inset 1px 1px 3px rgba(0,0,0, 0.40);
+}
+
+div.contactpage form textarea {
+	width: 430px;
+	height: 100px;
+}
+
+div.contactpage form input.city {
+	width: 160px;
+	clear: none;
+}
+
+div.contactpage form input.zip {
+	width: 80px;
+	clear: right;
+}
+
+div.contactpage form input.invalid,
+div.contactpage form textarea.invalid {
+	background-color: rgba(225, 0, 0, 0.2);
+}
+
+div.contactpage form select.invalid {
+	background-color: rgb(88,45,46);
+}
+
+div.contactpage form button {
+	float: right;
+	margin-right: 25px;
+}
+
+div.contactpage footer {
+	position: absolute;
+	top: 3100px;
+	left: 175px;
+	z-index: 3;
+}
+
+div.contactpage footer span.logo {
+	display: inline-block;
+	width: 93px;
+	height: 110px;
+	background: url(../images/wishlist-logo-small.png) no-repeat;
+}
+
+div.contactpage footer span.copytext {
+	position: relative;
+	bottom: 45px;
+	font-size: 14px;
+}
