@@ -53,7 +53,7 @@ header.light span.active {
 div.stars-bg {
 	width: 1000px;
 	height: 750px;
-	background: url(../images/centered-star-bg.png) no-repeat;
+	background: url(http://bandbappsllc.bandbappsllc.stackmobapp.com/images/centered-star-bg.png) no-repeat;
 	z-index: 1;
 }
 
@@ -62,7 +62,7 @@ button {
 	width: 344px;
 	height: 85px;
 	border: 0px;
-	background: url(../images/button-bg.png) no-repeat;
+	background: url(http://bandbappsllc.bandbappsllc.stackmobapp.com/images/button-bg.png) no-repeat;
 	font-size: 24px;
 	color: #FFFFFF;
 	font-weight: bold;
@@ -70,7 +70,7 @@ button {
 }
 
 button.iphoneDownload {
-	background: url(../images/iphone-button-bg.png) no-repeat;
+	background: url(http://bandbappsllc.bandbappsllc.stackmobapp.com/images/iphone-button-bg.png) no-repeat;
 	padding-left: 20px;
 	/*display:none;/* TODO: Remove once store links are updated for download */
 }
@@ -79,7 +79,7 @@ div.homepage {
 	min-width: 1390px;
 	width: 100%;
 	height: 1130px;
-	background: url(../images/wishlist-bg.png) repeat-x;
+	background: url(http://bandbappsllc.bandbappsllc.stackmobapp.com/images/wishlist-bg.png) repeat-x;
 	margin: auto;
 	text-align: center;
 }
@@ -346,7 +346,7 @@ div.contactpage footer span.logo {
 	display: inline-block;
 	width: 93px;
 	height: 110px;
-	background: url(../images/wishlist-logo-small.png) no-repeat;
+	background: url(http://bandbappsllc.bandbappsllc.stackmobapp.com/images/wishlist-logo-small.png) no-repeat;
 }
 
 div.contactpage footer span.copytext {
