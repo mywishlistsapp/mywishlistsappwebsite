@@ -68,13 +68,13 @@ function setupBindings(animationTimespan) {
 		}
 	});
 	
-	$('div.contactpage button').on('click', function(ev) {
+	/*$('div.contactpage button').on('click', function(ev) {
 		ev.preventDefault();
 		
 		contactSubmitHandler();
 		
 		return false;
-	});
+	});*/
 }
 
 function changeToolbarColor(section) {
@@ -91,7 +91,7 @@ function changeActiveLink($link) {
 }
 
 function setupValidation() {
-	$('div.contactpage form').validate({
+	/*$('div.contactpage form').validate({
 		rules: {
 			first: "required",
 			last: "required",
@@ -107,15 +107,15 @@ function setupValidation() {
 		errorPlacement: function(error, element) {
 			//no-op
 		}
-	});
+	});*/
 }
 
 function contactSubmitHandler() {
-	var $form = $('div.contactpage form');
+	/*var $form = $('div.contactpage form');
 	
 	if($form.valid()) {
 		alert('Yay valid');
 	} else {
 		return false;
-	}
+	}*/
 }

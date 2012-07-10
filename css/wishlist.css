@@ -113,6 +113,10 @@ div.homepage div.threecolumn.column1 {
 	bottom: 690px;
 }
 
+ie8 div.homepage div.threecolumn.column1 {
+	bottom: 300px;
+}
+
 div.homepage div.threecolumn.column1 button {
 	margin-top: 65px;
 }
