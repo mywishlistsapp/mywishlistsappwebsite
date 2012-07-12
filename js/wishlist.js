@@ -9,8 +9,8 @@ $(document).ready(function() {
 });
 
 function setupMasks() {
-	$('input.zip').mask('99999');
-	$('input.phone').mask('(999) 999 - 9999');
+	/*$('input.zip').mask('99999');
+	$('input.phone').mask('(999) 999 - 9999');*/
 }
 
 function setupBindings(animationTimespan) {
@@ -25,6 +25,10 @@ function setupBindings(animationTimespan) {
 				});
 	});
 	
+	$('button.iphoneDownload').on('click', function() {
+		window.location = 'http://itunes.apple.com/us/app/my-wish-lists/id522681408?mt=8';
+	});
+	
 	$('span.features').on('click', function() {
 		var $link = $(this);
 		
@@ -36,13 +40,13 @@ function setupBindings(animationTimespan) {
 				});
 	});
 	
-	$('span.contact').on('click', function() {
+	$('span.videos').on('click', function() {
 		var $link = $(this);
 		
 		$('html, body').animate({
-			scrollTop: $('div.contactpage').offset().top
+			scrollTop: $('div.videopage').offset().top
 			}, animationTimespan, function() { 
-					changeToolbarColor('contact'); 
+					changeToolbarColor('videos'); 
 					changeActiveLink($link);
 				});
 	});
@@ -54,7 +58,7 @@ function setupBindings(animationTimespan) {
 			botOfFeatures = 2250,
 			isHomePage = yPos <= topOfFeatures,
 			isFeaturesPage = yPos >= topOfFeatures && yPos < botOfFeatures,
-			isContactPage = yPos >= botOfFeatures;
+			isVideosPage = yPos >= botOfFeatures;
 		
 		if(isHomePage) {
 			changeActiveLink($('span.home'));
@@ -62,8 +66,8 @@ function setupBindings(animationTimespan) {
 		} else if(isFeaturesPage) {
 			changeActiveLink($('span.features'));
 			$header.addClass('light');
-		} else if(isContactPage) {
-			changeActiveLink($('span.contact'));
+		} else if(isVideosPage) {
+			changeActiveLink($('span.videos'));
 			$header.removeClass('light');
 		}
 	});
